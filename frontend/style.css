@@ -1,0 +1,111 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f4f5f7;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+header { margin-bottom: 1.5rem; }
+header h1 { font-size: 1.5rem; margin-bottom: 0.4rem; }
+header p { color: #555; }
+
+.seletor, .algoritmo { margin-bottom: 1.5rem; }
+
+.algoritmo label { display: block; font-size: 0.9rem; margin-bottom: 0.3rem; color: #555; }
+
+#algoritmo {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  margin-bottom: 0.3rem;
+}
+
+#filtro {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+#filmes {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.4rem;
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+#detalhe, #resultado {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#detalhe h2, #resultado h2 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+.meta { color: #555; font-size: 0.9rem; margin-bottom: 0.8rem; }
+#sinopse { margin-bottom: 1rem; color: #333; }
+
+button {
+  background: #2f6fed;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:disabled { background: #9ab4f0; cursor: wait; }
+
+.previsto { font-size: 1.1rem; margin-bottom: 1rem; }
+.previsto strong { color: #2f6fed; }
+
+.barra-linha {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.barra-rotulo { width: 110px; font-size: 0.9rem; }
+
+.barra-fundo {
+  flex: 1;
+  background: #e4e8ee;
+  border-radius: 4px;
+  height: 18px;
+  overflow: hidden;
+}
+
+.barra-preenchida {
+  height: 100%;
+  background: #2f6fed;
+  transition: width 0.4s ease;
+}
+
+.barra-valor { width: 60px; text-align: right; font-size: 0.85rem; color: #555; }
+
+.oculto { display: none; }
+
+.erro {
+  background: #fde8e8;
+  color: #b91c1c;
+  border: 1px solid #f5b5b5;
+  border-radius: 6px;
+  padding: 0.8rem;
+}

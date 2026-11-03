@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classificador de Gêneros por Sinopse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Classificador de Gêneros por Sinopse</h1>
+      <p>Selecione um filme do conjunto de teste (20% do dataset, nunca visto pelo modelo) e escolha o algoritmo: a previsão pela sinopse pode acertar ou errar — como na avaliação real.</p>
+    </header>
+
+    <section class="seletor">
+      <input type="text" id="filtro" placeholder="Filtrar filmes por título..." autocomplete="off">
+      <select id="filmes" size="10"></select>
+    </section>
+
+    <section class="algoritmo">
+      <label for="algoritmo">Algoritmo de classificação:</label>
+      <select id="algoritmo"></select>
+      <span id="info-algoritmo" class="meta"></span>
+    </section>
+
+    <section id="detalhe" class="oculto">
+      <h2 id="titulo-filme"></h2>
+      <p class="meta">Gênero real (rótulo do dataset): <strong id="genero-real"></strong></p>
+      <p id="sinopse"></p>
+      <button id="btn-prever">Prever gênero pela sinopse</button>
+    </section>
+
+    <section id="resultado" class="oculto">
+      <h2>Resultado da previsão</h2>
+      <p class="meta">Algoritmo utilizado: <strong id="algoritmo-usado"></strong></p>
+      <p class="previsto">Gênero previsto: <strong id="genero-previsto"></strong></p>
+      <div id="probabilidades"></div>
+    </section>
+
+    <p id="erro" class="oculto erro"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
